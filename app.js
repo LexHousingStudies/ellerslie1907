@@ -9,19 +9,13 @@ var map = L.map('map',{
     })
     .setView([38.041451,-84.482538], 18);
 
-map.createPane('imagery')
-map.createPane('sanborn')
+var gBase = new L.Google();
 
-map.getPane('sanborn').style.zIndex = 650;
-
-var base = L.esri.imageMapLayer({
-    url: "http://kyraster.ky.gov/arcgis/rest/services/ImageServices/Ky_NAIP_2016_60cm_WGS84WM/ImageServer"
-  }).addTo(map);
+map.addLayer(gBase);
 
 var overlay = L.tileLayer('https://lexhousingstudies.github.io/assets/ellerslie1907/{z}/{x}/{y}.png', {
-      attribution: '<a href="http://libraries.uky.edu/" target="_blank">University of Kentucky Libraries</a>, <a href="http://mapwarper.net/" target="_blank">Map Warper</a>',
+      attribution: '<a href="http://libraries.uky.edu/" target="_blank">University of Kentucky Libraries</a>',
       opacity: 0.75,
-      pane: 'sanborn',
       maxNativeZoom: 19,
       maxZoom: 19
     })
