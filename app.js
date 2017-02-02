@@ -18,11 +18,11 @@ var base = L.esri.imageMapLayer({
     url: "http://kyraster.ky.gov/arcgis/rest/services/ImageServices/Ky_NAIP_2016_60cm_WGS84WM/ImageServer"
   }).addTo(map);
 
-var overlay = L.tileLayer('http://mapwarper.net/maps/tile/18270/{z}/{x}/{y}.png', {
+var overlay = L.tileLayer('https://lexhousingstudies.github.io/assets/ellerslie1907/{z}/{x}/{y}.png', {
       attribution: '<a href="http://libraries.uky.edu/" target="_blank">University of Kentucky Libraries</a>, <a href="http://mapwarper.net/" target="_blank">Map Warper</a>',
       opacity: 0.75,
       pane: 'sanborn',
-      maxNativeZoom: 18,
+      maxNativeZoom: 19,
       maxZoom: 19
     })
     .addTo(map);
