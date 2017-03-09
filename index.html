@@ -4,7 +4,10 @@
 <meta charset="utf-8" />
 <title>Ellerslie Ave, Lexington, KY - 1907</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" href="./leaflet/leaflet.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
 
 <link href="style.css" rel="stylesheet">
@@ -20,11 +23,12 @@
 <div class="title">
   <h1>Ellerslie Ave</h1>
   <h2>Lexington, 1907 Sanborn</a></h2>
+  <div id="opacity-control">
+    <input type="range" name="opacity-slider" id="opacity-slider" value="75" min="0" max="100">
+    <label for="opacity-slider">Overlay Opacity (0% &rarr; 100%)</label>
+  </div>
 </div>
 <div id="map"></div>
-<div id="control" class="ui-opacity">
-  <div id="handle" class="handle"></div>
-</div>
 <script src="app.js"></script>
 </body>
 </html>
