@@ -24,6 +24,5 @@ $("#opacity-slider").on("slidestop", function(event, ui){
 
 function ChangeOpacity(slider, overlay){
   var opacityValue = slider/100;
-  console.log(opacityValue);
   overlay.setOpacity(opacityValue);
 }
