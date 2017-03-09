@@ -35,8 +35,6 @@ h2 a {
 #opacity-control label {
   text-align: center;
   font-size: 10px;
-  font-family: "Proxima Nova", sans-serif;
-  text-shadow: 0 0 0.2em #000;
   padding-bottom: 4px;
 }
 #opacity-control input.ui-slider-input {
